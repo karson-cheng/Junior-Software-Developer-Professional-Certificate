@@ -45,7 +45,7 @@ public class PrimaryController {
     private static Connection connect() throws SQLException{
         String url = "jdbc:mysql://localhost:3306/test_db";
         String user = "root";
-        String password = "@@2468Abcd";
+        String password = "";
 
         return DriverManager.getConnection(url, user, password);
     }
