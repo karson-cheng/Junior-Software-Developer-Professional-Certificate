@@ -101,7 +101,7 @@ public class PrimaryController {
 
             while (rs.next()) {
                 int userId = rs.getInt("user_id");
-                String fName = rs.getString("first_name");
+                String fName = rs.getString("first_name");  
                 String lName = rs.getString("last_name");
                 int points = rs.getInt("reward_points");
                 System.out.println("Id: "+userId+" fName: "+fName+" lName: "+lName+" points: "+points);
@@ -159,7 +159,7 @@ public class PrimaryController {
 
     @FXML
     void updateUser(ActionEvent event) {
-         String newFName;
+        String newFName;
         String newLName;
         int newPoints;
 

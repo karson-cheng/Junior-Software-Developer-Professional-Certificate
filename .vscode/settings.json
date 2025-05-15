@@ -12,7 +12,7 @@
             "driver": "MySQL",
             "name": "TestDB",
             "database": "test_db",
-            "username": "root"
+            "username": "test_user"
         }
     ],
     "java.dependency.packagePresentation": "hierarchical"
