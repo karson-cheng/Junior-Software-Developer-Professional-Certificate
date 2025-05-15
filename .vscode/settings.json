@@ -14,5 +14,6 @@
             "database": "test_db",
             "username": "root"
         }
-    ]
+    ],
+    "java.dependency.packagePresentation": "hierarchical"
 }
