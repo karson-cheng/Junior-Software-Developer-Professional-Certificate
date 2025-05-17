@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1..0">
+        <title>Sweet Treats Bakery</title>
+        <style>
+            /* Base styles for all devices */
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+
+            header {
+                background-color: #f8b400;
+                color: white;
+                text-align: center;
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            .container {
+                width: 80%;
+                margin: 0 auto;
+                /* overflow-x: auto; Allows horizontal scrolling if needed */
+            }
+            
+
+
+            .content {
+                display: flex;
+                flex-direction: column;
+                /* flex-direction: row; Align in a row */
+                /* flex-wrap: nowrap; Prevent wrapping */
+                gap: 20px;
+                /* justify-content: space-between;
+                flex-direction: column;
+                gap: 20px; */
+            }
+
+            .content div {
+                background-color: #ffe6a7;
+                padding: 20px;
+                /* flex: 1 1 auto; Allow flex shrinking and growing
+                min-width: 250px;
+                box-sizing: border-box; */
+            }
+
+            footer {
+                background-color: #f8b400;
+                color: white;
+                text-align: center;
+                padding: 10px;
+            }
+
+            /* Media query for tablets (600px to 1023px) */
+            @media (min-width: 600px) and (max-width: 1023px) {
+                .content {
+                    flex-direction: row; /* Switch to horizontal layout*/
+                    flex-wrap: wrap; /* Alloww wrapping to multiple lines */
+                }
+
+                .content div {
+                    flex: 0 0 calc(50% - 20px); /* Two columns with space between */
+                    box-sizing: border-box;
+                }
+            }
+            
+            /* Media query for desktops (1024px to above) */
+            @media (min-width: 1024px) {
+                .content {
+                    flex-direction: row; /* Horizontal layout */
+                    flex-wrap: wrap; /* Allow wrapping */
+                }
+
+                .content div {
+                    flex: 0 0 calc(25% - 20px); /* Four columns with space between */
+                    box-sizing: border-box;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <haeder>
+            <h1>Welcome to Sweet Treats Bakery</h1>
+        </haeder>
+
+        <div class="container">
+            <section class="content">
+                <div class="column">
+                    <h2>Our Products</h2>
+                    <p>Delicious cakes, cookies, and pastries made fresh 
+                        daily.</p>
+                </div>
+                <div class="column">
+                    <h2>Special Offers</h2>
+                    <p>Check out our daily deals foro special discounts on 
+                        our best-sellers.</p>
+                </div>
+                <div class="column">
+                    <h2>Visit Us</h2>
+                    <p>123 Baker Street, YourCity, Open from 8am to 8pm.</p>
+                </div>
+                <div class="column">
+                    <h2>Customer Reviews</h2>
+                    <p>"The best bakery in town! Fresh pastries and
+                        amazing customer service." - Sarah K.
+                    </p>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <p>&copy; 2024 Sweet Treats Bakery. All Rights Reserved.</p>
+        </footer>
+    </body>
+</html>

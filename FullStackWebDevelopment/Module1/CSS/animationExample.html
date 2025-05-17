@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation Example</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            flex-direction: column;
+        }
+
+        /* Define keyframes for the animation */
+        @keyframes moveAndGrow {
+            from {
+                transform: translate(0, 0); /* Start position */
+                background-color: #3498db; /* Start color */
+                width: 100px; /* Start size */
+                height: 100px; /* Start size */
+            }
+            to {
+                transform: translate(200px, 100px); /* End position */
+                background-color: #e74c3c; /* End color */
+                width: 200px; /* End size */
+                height: 200px; /* End size */
+            }
+        }
+
+        .animated-box {
+            animation-name: moveAndGrow; /* 2. Animation name */
+            animation-duration: 2s; /* 3. Animation duration */
+            animation-timing-function: ease-in-out; /* 4. Timing function */
+            animation-delay: 1s; /* 5. Animation delay */
+            animation-iteration-count: infinite; /* 6. Iteration count */
+            animation-direction: alternate; /* 7. Animation direction */
+            animation-fill-mode: forwards; /* 8. Fill mode */
+            animation-play-state: running; /* 9. Play state */
+            display: inline-block; /* To apply width/height */
+        }
+    </style>
+</head>
+<body>
+    <div class="animated-box"></div>
+</body>
+</html>

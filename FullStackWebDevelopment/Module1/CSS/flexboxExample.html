@@ -1,0 +1,97 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scake=1.0">
+        <title>Cafe Delight</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+
+            h1 {
+                text-align: center;
+            }
+
+            .container {
+                width: 100%;
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 20px;
+
+            }
+            .meun {
+                display: flex;
+                /* Enable Flexbox*/
+                flex-direction: column;
+                /* Stack menn items vertically*/
+                align-items: stretch;
+                /* Stretch items to fill the container*/
+            }
+            .meun-item {
+                font-size: 18px;
+                padding: 15px;
+                border-bottom: 1px solid #ccc;
+            }
+            .center {
+                text-align: center;
+            }
+            .images {
+                display: flex;
+                /* Enable Flexbox*/
+                flex-wrap: wrap;
+                /* Allow image to wrap*/
+                align-items: stretch;
+                /* Center images */
+            }
+            .image {
+                max-width: 200px;
+                margin: 10px;
+            }
+            .testimonials {
+                display: flex;
+                /* Enable Flexbox*/
+                flex-direction: column;
+                /* Stack testimonials vertically*/
+                align-items: center;
+                /* Center testimonials */
+            }
+            .testimonial{                
+                font-size: 16px;
+                margin: 10px 0;
+                padding: 10px;
+                border: 1px solid #ccc;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Welcome to Cafe Delight</h1>
+
+            <div class="menu">
+                <h2>Menu</h2>
+                <div class="meun-item">Espreesso - $2.50</div>
+                <div class="meun-item">Cappuccino - $3.50</div>
+                <div class="meun-item">Latte - $4.00</div>
+                <div class="meun-item">Croissant - $2.00</div>
+            </div>
+
+            <h2 class="center">Our Cafe</h2>
+
+            <div class="images">
+                <img src="" alt="Cafe Interior" class="image">
+                <img src="" alt="Cafe Exterior" class="image">
+                <img src="" alt="Cafe Customers" class="image">
+            </div>
+
+            <div class="testimonials">
+                <h2>Customer Testimonials</h2>
+                <div class="testimonial">"The best coffee in town!" - Sarah</div>
+                <div class="testimonial">"A cozy place to relax." - Mike</div>
+                <div class="testimonial">"Great service and friendly staff." - Lisa</div>
+            </div>
+        </div>
+    </body>
+</html>
