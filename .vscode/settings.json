@@ -15,5 +15,6 @@
             "username": "test_user"
         }
     ],
-    "java.dependency.packagePresentation": "hierarchical"
+    "java.dependency.packagePresentation": "hierarchical",
+    "java.compile.nullAnalysis.mode": "automatic"
 }
